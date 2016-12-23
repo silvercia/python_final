@@ -108,8 +108,7 @@ class Prediction(object):
     def predict(self,parameter):
         '''
         :param parameter: the result calculated from previous.
-        :param ran: the range for a feature got from the previous class by training on sample datas.
-        :param avg: the average for a feature got from the previous class by training on sample datas.
+        Estimate the price.
         '''
         list = [1,self.crim, self.zn, self.induc, self.chas, self.nox, self.rm, self.age, self.dis, self.rad, self.tax, self.ptratio, self.b, self.lstat]
         param = array(list)

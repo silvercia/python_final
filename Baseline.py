@@ -121,7 +121,7 @@ def main(data_path,crim=0, zn=0, induc=0, chas=0, nox=0, rm=0, age=0, dis=0, rad
     a.get_parameters()
     a.get_R_square()
     print('The linear regression is: \n'
-          'estimated price = '+str(a.parameter[0])+str(a.parameter[1])+'CRIM+'+str(a.parameter[2])+'ZN+'+str(a.parameter[3])+'INDUS+'+str(a.parameter[4])+'CHAS'+str(a.parameter[5])+'NOX+'+str(a.parameter[6])+'RM+'+str(a.parameter[7])+'AGE'+str(a.parameter[8])+'DIS+'+str(a.parameter[9])+'RAD'+str(a.parameter[10])+'TAX'+str(a.parameter[11])+'PTRATTO+'+str(a.parameter[12])+'B'+str(a.parameter[13])+'LSTAT**0.5')
+          'estimated price = '+str(a.parameter[0])+str(a.parameter[1])+'CRIM+'+str(a.parameter[2])+'ZN+'+str(a.parameter[3])+'INDUS+'+str(a.parameter[4])+'CHAS'+str(a.parameter[5])+'NOX+'+str(a.parameter[6])+'RM+'+str(a.parameter[7])+'AGE'+str(a.parameter[8])+'DIS+'+str(a.parameter[9])+'RAD'+str(a.parameter[10])+'TAX'+str(a.parameter[11])+'PTRATTO+'+str(a.parameter[12])+'B'+str(a.parameter[13])+'LSTAT')
     print('R-square is: '+ str(a.evaluation))
     b = Prediction(crim, zn, induc, chas, nox, rm, age, dis, rad, tax, ptratio, b, lstat)
     b.predict(a.parameter)
